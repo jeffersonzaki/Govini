@@ -2,7 +2,7 @@ FROM ubuntu:latest
 RUN apt-get update && apt-get -y update
 RUN apt-get install -y build-essential python3.6 python3-pip python3-dev
 
-RUN pip install fuzzywuzzy && \
+RUN pip3 install fuzzywuzzy && \
 	pip3 install && \
 	pip3 install re && \
 	pip3 install string && \
