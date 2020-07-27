@@ -1,5 +1,9 @@
 # Govini
 
+<p align="center">
+  <img src="https://www.rosette.com/wp-content/uploads/2017/12/name-dedupe.svg">
+</p>
+
 - Problem: Mapping entities between disparate datasets. Collecting data from a veriety of sources, and knowing that a certain entity is the same from one dataset to another is essential.
     - Example: For example, there may be a company named "FOO" in one data set, and a company named "foo 123" in another. We need to be able to determine with a high enough confidence that those are the same entity. However, a majority of the time, the data does not share a unique key.
     
