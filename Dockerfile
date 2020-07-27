@@ -4,7 +4,7 @@ RUN apt-get install -y build-essential python3.6 python3-pip python3-dev
 
 RUN pip3 install fuzzywuzzy && \
     pip3 install numpy pandas sklearn matplotlib seaborn jupyter && \
-    pip3 install string && \
+    pip3 install strings && \
     pip3 install re
 
 WORKDIR /Users/zakijefferson/code/Govini
