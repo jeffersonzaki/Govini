@@ -31,6 +31,25 @@
 
 ## Content Summary
 - [Data](https://github.com/jeffersonzaki/Govini/tree/master/Data) - Contains csv files used
+
+- [Scripts](https://github.com/jeffersonzaki/Govini/tree/master/Scripts) - Contains a python file with production code
+
 - [gitignore](https://github.com/jeffersonzaki/Govini/blob/master/.gitignore) - Ignores certain items
+
 - [Dockerfile](https://github.com/jeffersonzaki/Govini/blob/master/Dockerfile) - Used to build an image in docker using this jupyter notebook contents
-- [README](https://github.com/jeffersonzaki/Govini/blob/master/README.md) - Summary of 
+
+- [Exploratory Data Analysis](https://github.com/jeffersonzaki/Govini/blob/master/EDA.ipynb) - Goes into the data in detail to learn more about the data that was given
+
+- [README](https://github.com/jeffersonzaki/Govini/blob/master/README.md) - Summary of project
+
+- [Work with no edit](https://github.com/jeffersonzaki/Govini/blob/master/all-work-with-no-edits.ipynb) - Contains my work that hasn't been cleaned. First impressions
+
+- [NLP](https://github.com/jeffersonzaki/Govini/blob/master/nlp-fuzzy-name-matching.ipynb) - Cleaned NLP notebook. Fuzzy name matching is used to connect the disparate dataset
+
+- [Preprocessing](https://github.com/jeffersonzaki/Govini/blob/master/preprocessing.ipynb) - Cleaning data
+
+## Project Member
+- [Zaki Jefferson](https://github.com/jeffersonzaki)
+
+## Data
+- [AWS-Govini](https://s3.amazonaws.com/BUCKET_FOR_FILE_TRANSFER/interview.tar.xz)
