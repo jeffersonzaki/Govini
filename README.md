@@ -52,6 +52,24 @@
 
 - [Preprocessing](https://github.com/jeffersonzaki/Govini/blob/master/preprocessing.ipynb) - Cleaning data
 
+## How The Algorithm Works
+In the [NLP](https://github.com/jeffersonzaki/Govini/blob/master/nlp-fuzzy-name-matching.ipynb) notebook there are some algorithms that have been used from the fuzzymatcher and fuzzywuzzy libraries. In the fuzzywuzzy library, the algorithms that were used to match the entities in the two disparate datasets were partial_ratio, token_sort_ratio, and token_set_ratio.
+
+**Partial Ratio:**
+Partial ratio uses length to make connections with the given values, e.g. if the short string has length k
+and the longer string has the length m, then the algorithm seeks the score of the best matching length-k substring. 
+
+**Token Sort Ratio:**
+Token sort ratio uses tokenization to break the text into smaller units, sorts them alphabetically, and gets joined together. After that it uses a simple fuzz.ratio() to look for the similarity percentage.
+
+**Token Set Ratio:**
+Token set ratio uses some of the fundamentals of token sort ratio, but what it does differently is perform a set operation that takes out the common tokens (the intersection) and then makes fuzz.ratio() pairwise comparisons between the following new strings:
+
+s1 = Sorted_tokens_in_intersection
+s2 = Sorted_tokens_in_intersection + sorted_rest_of_str1_tokens
+s3 = Sorted_tokens_in_intersection + sorted_rest_of_str2_tokens
+
+
 ## Project Member
 - [Zaki Jefferson](https://github.com/jeffersonzaki)
 
