@@ -66,8 +66,14 @@ Token sort ratio uses tokenization to break the text into smaller units, sorts t
 Token set ratio uses some of the fundamentals of token sort ratio, but what it does differently is perform a set operation that takes out the common tokens (the intersection) and then makes fuzz.ratio() pairwise comparisons between the following new strings:
 
 s1 = Sorted_tokens_in_intersection
+
 s2 = Sorted_tokens_in_intersection + sorted_rest_of_str1_tokens
+
 s3 = Sorted_tokens_in_intersection + sorted_rest_of_str2_tokens
+
+For the python library fuzzymatcher, the algorithm that was used was **fuzzy_left_join:** 
+
+Sadly there wasn't much documentation for this library that I could find, but if I were to take a guess, I would assume that it mostly uses partial ratio, and token sort ratio. I'm assuming this because when I looked at the data that I performed this function on, it was getting low scores on things that should've been obviously related, it got them correct, the only problem what that the scores were too low for my liking. I saw that it could be using a majority of length similarly.
 
 
 ## Project Member
